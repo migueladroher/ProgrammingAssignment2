@@ -1,5 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## R Programming - Coursera - September 2014
+## Programming Assignment 2
+## 
+## In these assigment we create a function that caches a Matrix and its Inverse 
+## inside the state of an object in R taking advantage of R scoping rules
 
 ## This function creates a special "matrix" object that can cache its inverse
 
@@ -18,7 +21,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## This function computes the inverse of the special "matrix" returned by makeCacheMatrix above. 
-## If the inverse has already been calculated (and the matrix has not changed), then cacheSolve should retrieve the inverse from the cache.
+## If the inverse has already been calculated (and the matrix has not changed), 
+## then cacheSolve should retrieve the inverse from the cache.
+## The function does not test whether the matrix is invertible or not, but just assumes it is
 
 cacheSolve <- function(x, ...) {
       ## Return a matrix that is the inverse of 'x'
